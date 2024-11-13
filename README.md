@@ -5,6 +5,8 @@ for possible async. Also deptrac is installed for checking code structure qualit
 All of required code from task is inside \App\Domain.
 I extended interfaces from task to apply design patterns with more clean code.
 
+Calculator from task is inside App\Domain\Discount\DiscountCalculator.
+
 I know it's YAGNI, and I wouldn't add that much in real case scenario, but it's recruitment task,
 so I wanted to show some of my skills :)
 
