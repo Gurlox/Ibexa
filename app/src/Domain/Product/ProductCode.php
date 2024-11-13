@@ -27,6 +27,9 @@ class ProductCode implements \Stringable
         return $this->code;
     }
 
+    /**
+     * @throws ValidationException
+     */
     private function validate(string $code): void
     {
         if (!preg_match("/^[A-Z]{1,10}$/", $code)) {

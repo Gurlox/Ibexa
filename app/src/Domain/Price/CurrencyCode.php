@@ -27,6 +27,9 @@ class CurrencyCode implements \Stringable
         return $this->currencyCode;
     }
 
+    /**
+     * @throws ValidationException
+     */
     private function validate(string $currencyCode): void
     {
         if (!\preg_match("/^[A-Z]{3}$/", $currencyCode)) {

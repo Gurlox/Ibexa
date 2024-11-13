@@ -48,6 +48,9 @@ class Price implements PriceInterface
         return $this;
     }
 
+    /**
+     * @throws ValidationException
+     */
     public function add(int $amount): self
     {
         $this->validateAmount($amount);
@@ -63,6 +66,9 @@ class Price implements PriceInterface
         return $this;
     }
 
+    /**
+     * @throws ValidationException
+     */
     private function validateAmount(int $amount): void
     {
         if ($amount < 0) {
